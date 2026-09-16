@@ -3,143 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Apogee Lab</title>
-  <meta
-    name="description"
-    content="Apogee Lab — engineering, mathematics, software, learning, and experimentation."
-  >
-
+  <meta name="description" content="Apogee Lab — engineering, mathematics, software, learning, and experimentation.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <main class="page">
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="topbar-brand" href="#top">
+        <img src="logo.png" alt="Apogee Lab logo">
+        <span>Apogee Lab</span>
+      </a>
 
-    <header class="hero">
-      <img class="logo" src="logo.png" alt="Apogee Lab logo">
+      <a
+        class="topbar-youtube"
+        href="https://www.youtube.com/@ApogeeLab/featured"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube
+      </a>
+    </div>
+  </header>
 
-      <div class="hero-text">
+  <main class="page" id="top">
+
+    <section class="hero">
+      <img class="hero-logo" src="logo.png" alt="Apogee Lab logo">
+
+      <div class="hero-copy">
         <p class="brand">APOGEE LAB</p>
         <h1>Build. Experiment. Understand.</h1>
-
         <p class="intro">
-          A collection of projects in engineering, mathematics, software,
-          learning, and experimentation.
+          Engineering projects, mathematics, software, learning, and experimentation —
+          all in one place.
         </p>
       </div>
-    </header>
-
+    </section>
 
     <section class="tiles" aria-label="Apogee Lab projects">
 
-      <a class="tile" href="https://trade.apogeelab.org">
-        <span class="number">01</span>
+      <article
+        class="tile tile-disabled"
+        style="--image: url('engineering.webp'); --accent: rgba(255, 121, 52, 0.50);"
+      >
+        <div class="tile-bg"></div>
+        <div class="tile-overlay"></div>
 
-        <div>
-          <h2>Trading Lab</h2>
-          <p>
-            Trading replay, journaling, setup tracking, and performance
-            analysis tools.
-          </p>
+        <div class="tile-content">
+          <div class="tile-top">
+            <span class="tile-number">01</span>
+            <span class="tile-tag tile-tag-soon">Coming Soon</span>
+          </div>
+
+          <div class="tile-main">
+            <h2>Engineering Projects</h2>
+            <p>
+              Mechanical engineering prototypes, CAD, analysis, testing,
+              electronics integration, and project documentation.
+            </p>
+          </div>
+
+          <div class="tile-bottom">
+            <span class="tile-link tile-link-muted">Portfolio in development</span>
+          </div>
         </div>
+      </article>
 
-        <span class="open">Open →</span>
+      <a
+        class="tile"
+        href="https://mathmuseum.apogeelab.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="--image: url('mathmuseum.webp'); --accent: rgba(113, 171, 255, 0.52);"
+      >
+        <div class="tile-bg"></div>
+        <div class="tile-overlay"></div>
+
+        <div class="tile-content">
+          <div class="tile-top">
+            <span class="tile-number">02</span>
+            <span class="tile-tag">Live</span>
+          </div>
+
+          <div class="tile-main">
+            <h2>Math Museum</h2>
+            <p>
+              An interactive virtual museum designed to make mathematical ideas
+              visual, intuitive, and explorable.
+            </p>
+          </div>
+
+          <div class="tile-bottom">
+            <span class="tile-link">Enter Museum →</span>
+          </div>
+        </div>
       </a>
 
+      <a
+        class="tile"
+        href="https://trade.apogeelab.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="--image: url('trading.webp'); --accent: rgba(48, 222, 165, 0.45);"
+      >
+        <div class="tile-bg"></div>
+        <div class="tile-overlay"></div>
 
-      <a class="tile" href="https://study.apogeelab.org">
-        <span class="number">02</span>
+        <div class="tile-content">
+          <div class="tile-top">
+            <span class="tile-number">03</span>
+            <span class="tile-tag">Live</span>
+          </div>
 
-        <div>
-          <h2>Study Lab</h2>
-          <p>
-            Interactive tools and resources for learning engineering,
-            mathematics, physics, and other technical subjects.
-          </p>
+          <div class="tile-main">
+            <h2>Trading Lab</h2>
+            <p>
+              Trading replay, journaling, setup tracking, and performance
+              analysis tools built for deliberate review and improvement.
+            </p>
+          </div>
+
+          <div class="tile-bottom">
+            <span class="tile-link">Open Trading Lab →</span>
+          </div>
         </div>
-
-        <span class="open">Open →</span>
       </a>
 
+      <a
+        class="tile"
+        href="https://www.youtube.com/@ApogeeLab/featured"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="--image: none; --accent: rgba(255, 82, 82, 0.52);"
+      >
+        <div class="tile-bg tile-bg-youtube"></div>
+        <div class="tile-overlay"></div>
 
-      <a class="tile" href="https://mathmuseum.apogeelab.org">
-        <span class="number">03</span>
+        <div class="tile-content">
+          <div class="tile-top">
+            <span class="tile-number">04</span>
+            <span class="tile-tag">YouTube</span>
+          </div>
 
-        <div>
-          <h2>Math Museum</h2>
-          <p>
-            An interactive virtual museum designed to make mathematical ideas
-            visual, intuitive, and explorable.
-          </p>
+          <div class="tile-main">
+            <h2>YouTube</h2>
+            <p>
+              Engineering videos, technical explanations, design decisions,
+              prototyping, testing, and iteration.
+            </p>
+          </div>
+
+          <div class="tile-bottom">
+            <span class="tile-link">Watch Apogee Lab →</span>
+          </div>
         </div>
-
-        <span class="open">Enter →</span>
       </a>
 
+      <a
+        class="tile"
+        href="https://study.apogeelab.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="--image: url('study.webp'); --accent: rgba(255, 208, 108, 0.46);"
+      >
+        <div class="tile-bg"></div>
+        <div class="tile-overlay"></div>
 
-      <div class="tile disabled">
-        <span class="number">04</span>
+        <div class="tile-content">
+          <div class="tile-top">
+            <span class="tile-number">05</span>
+            <span class="tile-tag">Live</span>
+          </div>
 
-        <div>
-          <h2>Engineering Portfolio</h2>
-          <p>
-            Mechanical engineering projects, prototypes, CAD, analysis,
-            testing, and documentation.
-          </p>
+          <div class="tile-main">
+            <h2>Study by Apogee Lab</h2>
+            <p>
+              Interactive study tools and resources for learning engineering,
+              mathematics, physics, and other technical subjects.
+            </p>
+          </div>
+
+          <div class="tile-bottom">
+            <span class="tile-link">Open Study →</span>
+          </div>
         </div>
-
-        <span class="coming-soon">Coming soon</span>
-      </div>
-
-
-      <!-- Replace the URL below with your actual YouTube channel URL. -->
-      <a class="tile youtube" href="https://www.youtube.com/@ApogeeLab">
-        <span class="number">05</span>
-
-        <div>
-          <h2>YouTube</h2>
-          <p>
-            Engineering projects, technical explanations, design decisions,
-            prototypes, testing, and iteration.
-          </p>
-        </div>
-
-        <span class="open">Watch →</span>
       </a>
 
     </section>
 
-
     <section class="about">
       <p class="section-label">ABOUT</p>
 
-      <div>
+      <div class="about-copy">
         <h2>What is Apogee Lab?</h2>
-
         <p>
           Apogee Lab is a personal collection of engineering projects,
           software, educational tools, and experiments built around curiosity,
           hands-on learning, and understanding how things work.
         </p>
-
         <p>
           The goal is to take ideas beyond the concept stage: build them,
-          model them, test them, document the decisions, and learn from what
-          happens next.
+          model them, test them, document the design decisions, and learn from
+          what happens next.
         </p>
       </div>
     </section>
 
-
-    <footer>
+    <footer class="footer">
       <span>Apogee Lab</span>
       <span>Engineering · Mathematics · Software · Learning</span>
     </footer>
 
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
