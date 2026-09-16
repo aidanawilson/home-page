@@ -114,11 +114,12 @@ a {
 /* Hero */
 
 .hero {
+  position: relative;
   min-height: 100svh;
   display: flex;
   align-items: center;
   gap: 56px;
-  padding: 72px 0 36px;
+  padding: 72px 0 108px;
 }
 
 .hero-logo {
@@ -152,6 +153,63 @@ a {
   color: var(--muted);
   font-size: 1.16rem;
   line-height: 1.75;
+}
+
+
+/* Scroll cue */
+
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.scroll-indicator:hover {
+  color: #ffffff;
+  transform: translateX(-50%) translateY(3px);
+}
+
+.scroll-circle {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(8px);
+  font-size: 1.25rem;
+  box-shadow:
+    0 8px 26px rgba(0, 0, 0, 0.22),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  animation: scrollPulse 2.2s ease-in-out infinite;
+}
+
+.scroll-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
+@keyframes scrollPulse {
+  0%, 100% {
+    transform: translateY(0);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+
+  50% {
+    transform: translateY(6px);
+    border-color: rgba(98, 167, 255, 0.55);
+  }
 }
 
 /* Tiles */
@@ -210,7 +268,7 @@ a {
 
 .tile:hover .tile-bg {
   transform: scale(1.15);
-  filter: blur(0.5px) saturate(1.15);
+  filter: blur(1.4px) saturate(1.12);
 }
 
 .tile-bg-youtube {
@@ -360,10 +418,11 @@ a {
 
 @media (max-width: 980px) {
   .hero {
-    min-height: 0;
-    padding: 100px 0 48px;
+    min-height: 100svh;
+    padding: 100px 0 104px;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     gap: 28px;
   }
 
@@ -415,5 +474,12 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-circle {
+    animation: none;
   }
 }
