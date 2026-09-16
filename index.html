@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apogee Lab</title>
   <meta
     name="description"
     content="Apogee Lab — engineering, mathematics, software, learning, and experimentation."
-  />
-  <title>Apogee Lab</title>
+  >
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main class="site-shell">
 
-    <section class="hero">
-      <p class="eyebrow">APOGEE LAB</p>
+  <main class="page">
 
-      <h1>Build. Experiment. Understand.</h1>
+    <header class="hero">
+      <img class="logo" src="logo.png" alt="Apogee Lab logo">
 
-      <p class="hero-copy">
-        A collection of projects in engineering, mathematics, software,
-        learning, and experimentation.
-      </p>
-    </section>
+      <div class="hero-text">
+        <p class="brand">APOGEE LAB</p>
+        <h1>Build. Experiment. Understand.</h1>
 
-    <section class="project-grid" aria-label="Apogee Lab projects">
+        <p class="intro">
+          A collection of projects in engineering, mathematics, software,
+          learning, and experimentation.
+        </p>
+      </div>
+    </header>
 
-      <a
-        class="project-card"
-        href="https://trade.apogeelab.org"
-        aria-label="Open Trading Lab"
-      >
-        <div class="card-top">
-          <span class="card-index">01</span>
-          <span class="card-status">LIVE</span>
-        </div>
 
-        <div class="card-content">
+    <section class="tiles" aria-label="Apogee Lab projects">
+
+      <a class="tile" href="https://trade.apogeelab.org">
+        <span class="number">01</span>
+
+        <div>
           <h2>Trading Lab</h2>
           <p>
-            Trading replay, journaling, setup tracking, and performance-analysis
-            tools built for deliberate review and improvement.
+            Trading replay, journaling, setup tracking, and performance
+            analysis tools.
           </p>
         </div>
 
-        <div class="card-link">
-          Explore <span aria-hidden="true">↗</span>
-        </div>
+        <span class="open">Open →</span>
       </a>
 
-      <a
-        class="project-card"
-        href="https://study.apogeelab.org"
-        aria-label="Open Study Lab"
-      >
-        <div class="card-top">
-          <span class="card-index">02</span>
-          <span class="card-status">LIVE</span>
-        </div>
 
-        <div class="card-content">
+      <a class="tile" href="https://study.apogeelab.org">
+        <span class="number">02</span>
+
+        <div>
           <h2>Study Lab</h2>
           <p>
             Interactive tools and resources for learning engineering,
@@ -69,22 +61,14 @@
           </p>
         </div>
 
-        <div class="card-link">
-          Explore <span aria-hidden="true">↗</span>
-        </div>
+        <span class="open">Open →</span>
       </a>
 
-      <a
-        class="project-card"
-        href="https://mathmuseum.apogeelab.org"
-        aria-label="Open Math Museum"
-      >
-        <div class="card-top">
-          <span class="card-index">03</span>
-          <span class="card-status">LIVE</span>
-        </div>
 
-        <div class="card-content">
+      <a class="tile" href="https://mathmuseum.apogeelab.org">
+        <span class="number">03</span>
+
+        <div>
           <h2>Math Museum</h2>
           <p>
             An interactive virtual museum designed to make mathematical ideas
@@ -92,60 +76,47 @@
           </p>
         </div>
 
-        <div class="card-link">
-          Enter Museum <span aria-hidden="true">↗</span>
-        </div>
+        <span class="open">Enter →</span>
       </a>
 
-      <article class="project-card project-card--disabled" aria-label="Engineering portfolio coming soon">
-        <div class="card-top">
-          <span class="card-index">04</span>
-          <span class="card-status card-status--soon">COMING SOON</span>
-        </div>
 
-        <div class="card-content">
+      <div class="tile disabled">
+        <span class="number">04</span>
+
+        <div>
           <h2>Engineering Portfolio</h2>
           <p>
-            Mechanical systems, prototypes, CAD, analysis, testing, and
-            documentation from current and future engineering projects.
+            Mechanical engineering projects, prototypes, CAD, analysis,
+            testing, and documentation.
           </p>
         </div>
 
-        <div class="card-link muted">
-          Portfolio in development
-        </div>
-      </article>
+        <span class="coming-soon">Coming soon</span>
+      </div>
 
-      <a
-        class="project-card project-card--wide"
-        href="#"
-        id="youtube-link"
-        aria-label="Open Apogee Lab YouTube channel"
-      >
-        <div class="card-top">
-          <span class="card-index">05</span>
-          <span class="card-status">YOUTUBE</span>
-        </div>
 
-        <div class="card-content">
-          <h2>Apogee Lab on YouTube</h2>
+      <!-- Replace the URL below with your actual YouTube channel URL. -->
+      <a class="tile youtube" href="https://www.youtube.com/@ApogeeLab">
+        <span class="number">05</span>
+
+        <div>
+          <h2>YouTube</h2>
           <p>
             Engineering projects, technical explanations, design decisions,
-            prototypes, testing, iteration, and the process behind building them.
+            prototypes, testing, and iteration.
           </p>
         </div>
 
-        <div class="card-link">
-          Watch <span aria-hidden="true">↗</span>
-        </div>
+        <span class="open">Watch →</span>
       </a>
 
     </section>
 
-    <section class="about">
-      <div class="section-label">ABOUT</div>
 
-      <div class="about-copy">
+    <section class="about">
+      <p class="section-label">ABOUT</p>
+
+      <div>
         <h2>What is Apogee Lab?</h2>
 
         <p>
@@ -162,13 +133,13 @@
       </div>
     </section>
 
-    <footer class="site-footer">
-      <span>© <span id="year"></span> Apogee Lab</span>
+
+    <footer>
+      <span>Apogee Lab</span>
       <span>Engineering · Mathematics · Software · Learning</span>
     </footer>
 
   </main>
 
-  <script src="script.js"></script>
 </body>
 </html>
